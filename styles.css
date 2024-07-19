@@ -1,11 +1,3 @@
-:root {
-  --tg-theme-accent-text-color: #5577bb;
-  --tg-theme-text-color: #000000;
-  --tg-theme-bg-color: #ffffff;
-  --tg-theme-button-text-color: #ffffff;
-}
-
-
 body {
   font-family: monospace;
   margin: 0;
