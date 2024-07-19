@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container"></div>
+  <div id="head"><h1>Корзина</h1></div>
+  <ul class="menu">
+    <a href="index.html" id='main'>головна</a>
+    <a href="about.html" id='about'>хто ми</a>
+    <a href="contacts.html" id='contacts'>контакти</a>
+    <button type="button" onclick="redirectToCart()" id="korzina">$</button>
+  <div id="head">
+    <div id="cart-container">
+      <h2>Shopping Cart</h2>
+      <ul id="cart"></ul>
+      <h3 id="total">Сума: $0.00</h3>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container"></div>
+  <div id="head"><h1>Svetstore</h1></div>
+  <ul class="menu">
+    <a href="index.html" id='main'>головна</a>
+    <a href="about.html" id='about'>хто ми</a>
+    <a href="contacts.html" id='contacts'>контакти</a>
+    <button type="button" onclick="redirectToCart()" id="korzina">$</button>
+  </ul>
+  <div class="product">
+    <div class="product2">
+      <div class="products1">
+        <a class="proda" href="#" onclick="showProductInfo('apple-go.html')">
+          <img src="https://retail.degroot-inc.com/wp-content/uploads/2017/04/Apple_GoldenDelicious-1.jpg" alt="Apple Golden" id="apple-go">
+        </a>
+        <h2>Яблуко Голден</h2>
+        <h3>2$</h3>
+        <button type="button" name="button" class="button-prod" data-product="Apple Golden" onclick="addToCart('Apple Golden', 2, this)">Buy</button>
+      </div>
+      <div class="products2">
+        <a class="proda" href="#" onclick="showProductInfo('apple-gr.html')">
+          <img src="https://www.beaconvegboxes.co.uk/wp-content/uploads/2021/06/IMG_7003-002.jpg" alt="Apple Green" id='apple-gr'>
+        </a>
+        <h2>Яблуко зелене</h2>
+        <h3>1.5$</h3>
+        <button type="button" name="button" class="button-prod" data-product="Apple Green" onclick="addToCart('Apple Green', 1.5, this)">Buy</button>
+      </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

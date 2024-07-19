@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container"></div>
+  <div id="head"><h1>Supermarket</h1></div>
+  <ul class="menu">
+    <a href="index.html" id='main'>головна</a>
+    <a href="about.html" id='about'>хто ми</a>
+    <a href="contacts.html" id='contacts'>контакти</a>
+    <button type="button" onclick="redirectToCart()" id="korzina">$</button>
+  </ul>
+  <div class="product">
+    <div class="product2">
+      <div class="products">
+        <a class="proda-prod" href="#" onclick="showProductInfo('apple-go.html')">
+          <img src="https://www.beaconvegboxes.co.uk/wp-content/uploads/2021/06/IMG_7003-002.jpg" alt="Apple Green" id="apple-gr-prod">
+        </a>
+        <h2>Apple Green</h2>
+        <h3>1.5$</h3>
+        <h4>Зимний сорт, плоды светло-зелёные или ярко-зелёные, с многочисленными светлыми круглыми подкожными точками размером 2—5 мм. Форма плодов уплощённо округлая, от несколько конических до плоско-округлых, как у многих ренетов; плоды нередко асимметричны. Размер плодов средний или больше среднего, достигают крупного размера.
+
+Мякоть белая, сочная, нежная. Плоды имеют винно-сладкий, несколько пряный вкус.
+
+Сорт частично самоплодный, при самоопылении образуется от 3 до 11 % полноценной завязи. Однако степень самоплодности сорта является величиной непостоянной и зависит от факторов внешней среды.</h4>
+        <button type="button" name="button" class="button-prod" data-product="Apple Golden" onclick="addToCart('Apple Golden', 2, this)">Buy</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

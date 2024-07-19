@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container"></div>
+  <div id="head"><h1>Supermarket</h1></div>
+  <ul class="menu">
+    <a href="index.html" id='main'>головна</a>
+    <a href="about.html" id='about'>хто ми</a>
+    <a href="contacts.html" id='contacts'>контакти</a>
+    <button type="button" onclick="redirectToCart()" id="korzina">$</button>
+  </ul>
+  <div class="product">
+    <div class="product2">
+      <div class="products">
+        <a class="proda-prod" href="#" onclick="showProductInfo('apple-go.html')">
+          <img src="https://retail.degroot-inc.com/wp-content/uploads/2017/04/Apple_GoldenDelicious-1.jpg" alt="Apple Golden" id="apple-go-prod">
+        </a>
+        <h2>Apple Golden</h2>
+        <h3>2$</h3>
+        <h4>Плоды большие, с кожицей жёлтовато-зелёного цвета, обладают сладким вкусом. Склонны к сморщиванию и деформации при падении, поэтому при их сборе и хранении требуется особая осторожность. Часто используется при изготовлении салатов, яблочного пюре и повидла.</h4>
+        <button type="button" name="button" class="button-prod" data-product="Apple Golden" onclick="addToCart('Apple Golden', 2, this)">Buy</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
